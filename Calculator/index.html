@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <div class="inner-header">
+            <a href="index.html" class="logo-container"><img src="images/logo.png" alt="site logo"></span></a>
+            <ul>
+                <li><a href="#">How to Use?</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="section-header">
+            <ul>
+                <li><a href="#">+/-</a></li>
+                <li><a href="#">%</a></li>
+                <li><a href="#">√</a></li>
+                <li><a href="#">a<sup>b</sup></a></li>
+                <li id="formulas"><a href="#" id="formulas-link">formulas</a></li>
+            </ul>
+        </div>
+        <div class="calculator">
+            <div class="inner">
+                <h1 id="calcLabel">Basic calculations</h1>
+                <div class="calc-boxes">
+                    <input type="text" id="calcBox1" onkeyup="calc()">
+                    <select id="options">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="x">x</option>
+                        <option value="/">/</option>
+                    </select>
+                    <input type="text" id="calcBox2" onkeyup="calc()">
+                </div>
+                <div class="result-box">
+                    <input type="text" id="resultBox" >
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

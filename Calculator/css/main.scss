@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+$colors: (
+    oilGreen: #1d8a7a
+);
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body{
+    height: 100vh;
+}
+
+body{
+    font-family: 'Montserrat';
+
+    ::-webkit-input-placeholder{
+        font-size: 1em;
+    }
+
+    header{
+       width: 100%;
+        height: 120px;
+
+        .inner-header{
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            display: table;
+            
+            .logo-container{
+                display: table-cell;
+                float: left;
+                height: 70%;
+                vertical-align: middle;
+                width: 55%;
+                margin-top: 20px;
+               
+                img{
+                    width: 280px;
+                    position: absolute;
+                    top: 25px;
+                }
+            }
+
+            ul{
+                float: right;
+                height: 100%;
+
+                li:last-child{
+                    padding-right: 0;
+                }
+
+                li{
+                    float: left;
+                    height: 100%;
+                    padding-right: 30px;
+                    display: table;
+
+                    a{
+                        display: table-cell;
+                        height: 100%;
+                        vertical-align: middle;
+                        color: #000;
+                        font-size: .9em;
+                    }
+
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    section{
+        width: 100%;
+        height: 600px;
+        .section-header{
+            width: 100%;
+            background: map-get($colors, oilGreen);
+            height: 70px;
+
+            ul{
+                width: 700px;
+                height: 50px;
+                margin: 0 auto;
+                
+                li:hover{
+                    background: map-get($colors, oilGreen);
+                    transition: .3s;
+
+                    a{
+                        color: #fff;
+                    }
+                }
+            
+                .switcher{
+                    width: 30px;
+                }
+
+                
+
+                #formulas:hover, #auto:hover{
+                    background: map-get($colors, oilGreen);
+                    transition: .3s;
+                }
+
+                #auto, #formulas{
+                    width: 90px;
+                    height: 30px;
+                    display: table;
+                    background: rgb(255, 182, 23);
+
+                    a{
+                        font-size: 1em;
+                        display: table-cell;
+                        height: 100%;
+                        vertical-align: middle;
+                        color: #fff;
+                    }
+                }
+
+                #formulas{
+                    background: rgb(111, 197, 40);
+                }
+
+                li{
+                    float: left;
+                    width: 80px;
+                    padding: 18px 20px;
+                    margin-right: 5px;
+                    margin-top: 15px;
+                    background: #fff; 
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 15px rgb(207, 207, 207);
+                    text-align: center;
+
+                
+                    
+
+                    a{
+                        color: map-get($colors, oilGreen);   
+                        font-size: 1.5em;  
+                    }
+
+                    
+
+                    sup{
+                        font-style: italic;
+                        font-size: .5em;
+                    }
+                 }
+
+               
+            }
+        }
+
+        .calculator{
+            width: 100%;
+            background-image: url('../images/bg.jpg');
+            background-size: cover;
+            min-height: 600px;
+            margin-top: 0px;
+            z-index: 15;
+            animation: showHideToggle 1s;
+
+
+            .inner{
+                width: 70%;
+                height: 100%;
+                margin: 0 auto;
+               
+                h1{
+                    text-align: center;
+                    color: #fff;
+                    padding-top: 60px;
+                }
+
+                .calc-boxes{
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                    text-align: center;
+                   
+                    input, select, option{
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 15px #000;
+                        font-size: 2.5em;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+
+                    input{
+                        width: 320px;
+                        
+                    }
+
+                    .options, .select-box{
+                        font-size: 1.5em;
+                        margin-top: 20px;
+                    }
+
+                    .options{
+                        font-size: 1em;
+                    }
+
+                    input::placeholder{
+                        font-size: .6em;
+                    }
+
+                    .inputYourCar{
+                        width: 180px;
+                        font-size: 1.6em;
+                    }
+
+                    p{
+                        sup{
+                            font-size: .6em;
+                        }
+                    }
+
+                    select{
+                        padding: 5px 10px;
+                        font-size: 2em;
+                        text-align: middle;
+                        margin: 0 30px;
+                        color: map-get($colors, oilGreen);
+                        border-radius: 5px;
+                        border: none;
+                        box-shadow: 5px 5px 15px #000;
+                    }
+
+                    
+                }
+
+                .result-box{
+                    margin-top: 50px;
+                    width: 100%;
+                    display: none;
+                    animation: showHideToggle .8s;
+
+                    .inner-result{
+                        width: 88%;
+                        margin: 0 auto;
+                        input{
+                            display: inline-block;
+                            width: 800px;
+                            padding: 10px 20px;
+                            margin-left: 0px;
+                            border-radius: 5px;
+                            border: none;
+                            box-shadow: 5px 5px 15px #000;
+                            font-size: 3em;
+                            text-align: center;
+                        }
+    
+                        .resultBtn{
+                            background: map-get($colors, oilGreen);
+                            width: 100px;
+                            margin: 20px 0 0 145px;
+                            padding: 5px 10px;
+                            font-size: 1.2em;
+                            color: #fff;
+                        }
+
+                        .clearBtn{
+                            background: #fff;
+                            color: black;
+                        }
+
+                        .clearBtn:hover{
+                            cursor: pointer;
+                            background: map-get($colors, oilGreen);
+                            color: #fff;
+                            transition: .3s;
+                        }
+                    
+                    }
+
+                    
+                }
+            }
+            
+            
+        }
+    }
+}
+
+@keyframes showHideToggle{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+

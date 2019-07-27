@@ -1,0 +1,9 @@
+
+.calculator .inner .calc-boxes p{
+    display: inline;
+    padding: 5px 25px;
+    font-size: 3em;
+    text-align: middle;
+    margin: 0 30px;
+    color: #26b6a0;
+}

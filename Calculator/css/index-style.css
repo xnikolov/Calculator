@@ -1,0 +1,13 @@
+#index-section{
+    width: 780px;
+    height: 155px;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 10px 15px;
+    box-shadow: 1px 1px 10px #000;
+    border-radius: 10px;
+}
+
+#index-section h1{
+    text-align: center;
+}

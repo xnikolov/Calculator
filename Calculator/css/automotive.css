@@ -1,0 +1,51 @@
+.auto #autoLabel{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.auto .inner .auto-boxes{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.auto .inner .auto-boxes .inner-auto-boxes{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.auto .inner .auto-boxes .inner-auto-boxes #fuelEconomy{
+    margin-left: 18%;
+}
+
+.auto .inner .auto-boxes .inner-auto-boxes button{
+    width: 150px;
+    padding: 15px 20px;
+    margin: 30px 0 0 62px;
+    border-radius: 10px;
+    border: none;
+}
+
+.auto .inner .auto-boxes .inner-auto-boxes button:hover{
+    cursor: pointer;
+    background: #1d8a7a;
+    color: white;
+    box-shadow: 5px 8px 25px rgb(53, 53, 53);
+    transition: .4s;
+}
+
+.auto .inner .auto-boxes .inner-auto-boxes button a{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+input::placeholder{
+    font-size: .5em; 
+}
+
+.calculator .inner .calc-boxes .calcForm .inputYourCar{
+    width: 50px;
+    border-radius: 50px;
+}

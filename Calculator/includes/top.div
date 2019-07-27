@@ -1,0 +1,22 @@
+<header>
+        <div class="inner-header">
+            <a href="." class="logo-container"><img src="images/logo.png" alt="site-logo"></a>
+            <ul>
+                <li><a href="how-to-use.php">How to Use?</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+             </ul>
+        </div>
+    </header>
+
+    <section>
+    <div class="section-header">
+        <ul>
+            <li><a href="basic.php">+/-</a></li>
+            <li><a href="percentage.php">%</a></li>
+            <li><a href="sqrt.php">√</a></li>
+            <li><a href="power.php">a<sup>b</sup></a></li>
+            <li id="auto"><a href="automotive.php">Automotive</a></li>
+            
+        </ul>
+    </div>

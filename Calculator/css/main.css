@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+body ::-webkit-input-placeholder {
+  font-size: 1em;
+}
+
+body header {
+  width: 100%;
+  height: 120px;
+}
+
+body header .inner-header {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+}
+
+body header .inner-header .logo-container {
+  display: table-cell;
+  float: left;
+  height: 70%;
+  vertical-align: middle;
+  width: 55%;
+  margin-top: 20px;
+}
+
+body header .inner-header .logo-container img {
+  width: 280px;
+  position: absolute;
+  top: 25px;
+}
+
+body header .inner-header ul {
+  float: right;
+  height: 100%;
+}
+
+body header .inner-header ul li:last-child {
+  padding-right: 0;
+}
+
+body header .inner-header ul li {
+  float: left;
+  height: 100%;
+  padding-right: 30px;
+  display: table;
+}
+
+body header .inner-header ul li a {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  color: #000;
+  font-size: .9em;
+}
+
+body header .inner-header ul li a:hover {
+  text-decoration: underline;
+}
+
+body section {
+  width: 100%;
+  height: 600px;
+}
+
+body section .section-header {
+  width: 100%;
+  background: #1d8a7a;
+  height: 70px;
+}
+
+body section .section-header ul {
+  width: 700px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+body section .section-header ul li:hover {
+  background: #1d8a7a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body section .section-header ul li:hover a {
+  color: #fff;
+}
+
+body section .section-header ul .switcher {
+  width: 30px;
+}
+
+body section .section-header ul #formulas:hover, body section .section-header ul #auto:hover {
+  background: #1d8a7a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body section .section-header ul #auto, body section .section-header ul #formulas {
+  width: 90px;
+  height: 30px;
+  display: table;
+  background: #ffb617;
+}
+
+body section .section-header ul #auto a, body section .section-header ul #formulas a {
+  font-size: 1em;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  color: #fff;
+}
+
+body section .section-header ul #formulas {
+  background: #6fc528;
+}
+
+body section .section-header ul li {
+  float: left;
+  width: 80px;
+  padding: 18px 20px;
+  margin-right: 5px;
+  margin-top: 15px;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 15px #cfcfcf;
+          box-shadow: 2px 2px 15px #cfcfcf;
+  text-align: center;
+}
+
+body section .section-header ul li a {
+  color: #1d8a7a;
+  font-size: 1.5em;
+}
+
+body section .section-header ul li sup {
+  font-style: italic;
+  font-size: .5em;
+}
+
+body section .calculator {
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  min-height: 600px;
+  margin-top: 0px;
+  z-index: 15;
+  -webkit-animation: showHideToggle 1s;
+          animation: showHideToggle 1s;
+}
+
+body section .calculator .inner {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+body section .calculator .inner h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 60px;
+}
+
+body section .calculator .inner .calc-boxes {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+body section .calculator .inner .calc-boxes input, body section .calculator .inner .calc-boxes select, body section .calculator .inner .calc-boxes option {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px #000;
+          box-shadow: 5px 5px 15px #000;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body section .calculator .inner .calc-boxes input {
+  width: 320px;
+}
+
+body section .calculator .inner .calc-boxes .options, body section .calculator .inner .calc-boxes .select-box {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+body section .calculator .inner .calc-boxes .options {
+  font-size: 1em;
+}
+
+body section .calculator .inner .calc-boxes input::-webkit-input-placeholder {
+  font-size: .6em;
+}
+
+body section .calculator .inner .calc-boxes input:-ms-input-placeholder {
+  font-size: .6em;
+}
+
+body section .calculator .inner .calc-boxes input::-ms-input-placeholder {
+  font-size: .6em;
+}
+
+body section .calculator .inner .calc-boxes input::placeholder {
+  font-size: .6em;
+}
+
+body section .calculator .inner .calc-boxes .inputYourCar {
+  width: 180px;
+  font-size: 1.6em;
+}
+
+body section .calculator .inner .calc-boxes p sup {
+  font-size: .6em;
+}
+
+body section .calculator .inner .calc-boxes select {
+  padding: 5px 10px;
+  font-size: 2em;
+  text-align: middle;
+  margin: 0 30px;
+  color: #1d8a7a;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px #000;
+          box-shadow: 5px 5px 15px #000;
+}
+
+body section .calculator .inner .result-box {
+  margin-top: 50px;
+  width: 100%;
+  display: none;
+  -webkit-animation: showHideToggle .8s;
+          animation: showHideToggle .8s;
+}
+
+body section .calculator .inner .result-box .inner-result {
+  width: 88%;
+  margin: 0 auto;
+}
+
+body section .calculator .inner .result-box .inner-result input {
+  display: inline-block;
+  width: 800px;
+  padding: 10px 20px;
+  margin-left: 0px;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 15px #000;
+          box-shadow: 5px 5px 15px #000;
+  font-size: 3em;
+  text-align: center;
+}
+
+body section .calculator .inner .result-box .inner-result .resultBtn {
+  background: #1d8a7a;
+  width: 100px;
+  margin: 20px 0 0 145px;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+body section .calculator .inner .result-box .inner-result .clearBtn {
+  background: #fff;
+  color: black;
+}
+
+body section .calculator .inner .result-box .inner-result .clearBtn:hover {
+  cursor: pointer;
+  background: #1d8a7a;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@-webkit-keyframes showHideToggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showHideToggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
